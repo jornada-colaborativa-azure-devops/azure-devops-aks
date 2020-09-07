@@ -12,9 +12,9 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '551f55de-6977-4a98-a64f-9b723e8df2dd'
-  imageRepository: 'flightsearch'
-  containerRegistry: 'acrpocgol.azurecr.io'
-  dockerfilePath: '**/FlightSearch/Dockerfile'
+  imageRepository: 'clientems'
+  containerRegistry: 'livroazuredevops.azurecr.io'
+  dockerfilePath: '**/Dockerfile'
   # tag: '$(Build.BuildId)'
   tag: '$(version)'
   imagePullSecret: 'acrpocgolc9e1-auth'
