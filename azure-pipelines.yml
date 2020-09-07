@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'livroazuredevops'
   imageRepository: 'clientems'
   containerRegistry: 'livroazuredevops.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/ClienteMS/Dockerfile'
   # tag: '$(Build.BuildId)'
   tag: '$(version)'  
 
