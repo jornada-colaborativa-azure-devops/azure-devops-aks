@@ -11,7 +11,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '551f55de-6977-4a98-a64f-9b723e8df2dd'
+  dockerRegistryServiceConnection: 'livroazuredevops'
   imageRepository: 'clientems'
   containerRegistry: 'livroazuredevops.azurecr.io'
   dockerfilePath: '**/Dockerfile'
