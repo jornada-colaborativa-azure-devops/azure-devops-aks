@@ -40,7 +40,7 @@ stages:
         tags: |
           $(tag)
           
-    - upload: manifests
+    - upload: /ClienteMS/manifests
       artifact: manifests
 
     # - publish: $(System.DefaultWorkingDirectory)/manifests
