@@ -1,0 +1,27 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: clientems
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clientems
+  template:
+    metadata:
+      labels:
+        app: clientems
+    spec:
+      containers:
+        - name: clientems
+          image: enomoto/clientems:dev
+          ports:
+          - containerPort: 80
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 250m
+            limits:
+              cpu: 500m
+      imagePullSecrets:
+        - name: regcred

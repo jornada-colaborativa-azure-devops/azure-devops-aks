@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lUHmO6lnA7DMpOX11BNG8mcUuOhUOzKDdgs5rtAOyqKuHo+OkksKqOipy81Oacn8mXLq88A0k6vTOypUjFrMvw==",
+  "dgSpecHash": "9Pc27bJ9f3F6gSYIVl4CWV6xVKHSxbn6vdw9pl6wU9AQLL6Jzvmvk67iuAVaErWpLu0mtltN3MQd3q3lVPpfXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\norbe\\source\\repos\\ClienteMS\\ClienteMS\\ClienteMS.csproj",
+  "projectFilePath": "C:\\Users\\norbe\\source\\repos\\azure-devops-aks\\ClienteMS\\ClienteMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norbe\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\norbe\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -174,9 +174,7 @@
     "C:\\Users\\norbe\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\norbe\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\norbe\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\norbe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\norbe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512",
-    "C:\\Users\\norbe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.2\\microsoft.netcore.app.host.win-x64.3.1.2.nupkg.sha512"
+    "C:\\Users\\norbe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
