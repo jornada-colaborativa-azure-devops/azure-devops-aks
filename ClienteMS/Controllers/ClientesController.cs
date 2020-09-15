@@ -18,7 +18,7 @@ namespace ClienteMS.Controllers
     public class ClientesController : ControllerBase
     {
         private static int _counter = 0;
-        private static string _local;
+        private static string _local_host;
         private static string _kernel;
         private static string _target_framework;
         private readonly ILogger<ClientesController> _logger;
@@ -29,7 +29,7 @@ namespace ClienteMS.Controllers
             IConfiguration configuration)
         {
             System.Threading.Interlocked.Increment(ref _counter);
-            _local = Environment.MachineName;
+            _local_host = Environment.MachineName;
             _kernel = Environment.OSVersion.VersionString;
             _target_framework = Assembly
                 .GetEntryAssembly()?
@@ -44,7 +44,7 @@ namespace ClienteMS.Controllers
         public void AddHttpHeaders(HttpResponse Response)
         {
             Response.Headers.Add("X-Total-Count", _counter.ToString());
-            Response.Headers.Add("X-Local", _local.ToString());
+            Response.Headers.Add("X-Localhost", _local_host.ToString());
             Response.Headers.Add("X-Kernel", _kernel.ToString());
             Response.Headers.Add("X-Target-Framework", _target_framework.ToString());
         }
@@ -52,7 +52,7 @@ namespace ClienteMS.Controllers
         public void printLog()
         {
             _logger.LogInformation($"X-Total-Count: {_counter}");
-            _logger.LogInformation($"X-Local: {_local}");
+            _logger.LogInformation($"X-Localhost: {_local_host}");
             _logger.LogInformation($"X-Kernel: {_kernel}");
             _logger.LogInformation($"X-Target-Framework: {_target_framework}");
         }
